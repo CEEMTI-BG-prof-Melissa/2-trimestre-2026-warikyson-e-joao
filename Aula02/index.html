@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Formulário HTML</title>
+</head>
+
+<body> 
+  <h1>Cadastro de Usuário</h1>
+  <form action="cadastro.php" method="POST">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome">
+    <br>
+    <input type="radio" name="turno" id="manha" value="manha">
+    <label for="manha">Manhã</label>
+    <input type="radio" name="turno" id="tarde" value="tarde">
+    <label for="tarde">Tarde</label>
+    <input type="radio" name="turno" id="noite" value="noite">
+    <label for="noite">Noite</label>
+    <br>
+    <p>Áreas de interesse:</p>
+    <input type="checkbox" name="area[]" id="programacao" value="programacao"> 
+    <label for="programacao">Programação</label>
+    <br>
+     <input type="checkbox" name="area[]" id="design" value="design">
+    <label for="design">Design</label> 
+    <br>  
+    <input type="checkbox" name="area[]" id="redes" value="redes">
+    <label for="redes">Redes</label> 
+    <br>
+    <input type="checkbox" name="area[]" id="banco de dados" value="banco de dados">
+    <label for="banco de dados">banco de dados</label>
+    <br><br>
+    <label for="corFavorita">Escolha sua cor favorita:</label>
+    <input type="color" id="corFavorita" name="corFavorita" value="#FF0000">
+    <br><br>
+    <label for="satisfacao">Nível de Satisfação:</label>
+    <input type="range" id="satisfacao" name="satisfacao" min="0" max="10" value="5">
+    <br>
+    <label for="horario">Horário preferido:</label>
+    <input type="time" id="horario" name="horario">
+    <br><br>
+    <label for="arquivo">Envio de arquivo:</label>
+    <input type="file" id="arquivo" name="arquivo">
+    <br><br>
+</form>
+    <input type="submit" value="cadastrar">
+    <input type="reset" value="limpar">
+</body>
+</html>
